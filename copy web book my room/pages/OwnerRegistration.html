@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!-- CodingMaker-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>REGISTER</title>
+    <!--CSS Style-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    
+
+ </head>
+  <body> 
+    <link rel="stylesheet" href="../css/ownerRegistration.css" type="text/css">
+    <div class="box" > 
+     <div class="form" >
+       <form action="ownerRegistration.php" enctype="multipart/form-data" method="post">
+          <h2> OWNER REGISTRATION </h2>
+          <div class="inputbox">
+             <input type="text" required="required" name="name" >
+             <span> Name </span>
+             <i></i>
+          </div>
+
+          <div class="inputbox">
+             <input type="number" required="required" id="number" >
+             <span>Mobile Number</span>
+             <i></i>
+          </div>
+
+          
+          <div class="inputbox">
+            <input type="text" required="required" name="email" >
+            <span>Email</span>
+            <i></i>
+         </div>
+
+          <div class="inputbox">
+             <input type="text" required="required" name="address">
+             <span>Address</span>
+             <i></i>
+          </div>
+
+          <div class="inputbox">
+            <input type="text" required="required" name="house">
+            <span>House Number</span>
+            <i></i>
+         </div>
+
+          <div class="inputbox">
+             <input type="password" required="required" id="password" >
+             <span>Create a Password</span>
+             <i></i>
+          </div>
+         
+          <div class="inputbox">
+            <p style="color: white;"> >> Upload room images</p>
+            <input multiple type="file" required="required" id="photo" maxlength="5" minlength="1" >
+            <i></i>
+          </div>
+
+          <div class="inputbox">
+            <p style="color: white;"> >> choose your room type</p>
+            <select name="rooms" id="rooms" required="required" >
+                      <option value="volvo" name="sr">Single room</option>
+                      <option value="saab" name="dr">Double room</option>
+                      <option value="mercedes" name="other">other</option>
+            </select>
+          <i></i>
+          </div>
+
+          <div class="links">
+          </div>
+
+          <div class="links">
+              <a href="../pages/login.html">already have an account? Log in</a>
+          </div>
+
+          <input type="submit" value="Signup" name="submit"  >
+      </form>
+    </div>
+  </div>
+  </body>
+</html>
+
